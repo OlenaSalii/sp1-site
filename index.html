@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>Sertification project</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 id="title">FreeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form id="survey-form">
+      <div>
+        <label class="question">Name </label
+        ><input
+          class="line-input"
+          id="name"
+          type="text"
+          placeholder=" Enter your name"
+          required
+        />
+      </div>
+
+      <div>
+        <label class="question">Email</label
+        ><input
+          class="line-input"
+          id="email"
+          type="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          placeholder=" Enter your e-mail"
+          required
+        />
+      </div>
+
+      <div>
+        <label class="question">Age </label
+        ><input
+          class="line-input"
+          id="number"
+          type="number"
+          min="16"
+          max="100"
+          placeholder=" Years"
+          required
+        />
+      </div>
+
+      <div>
+        <label class="question"
+          >What is your favorite feature of freeCodeCamp?</label
+        >
+        <select class="line-input" name="feature" id="dropdown">
+          <option value="1">Challenges</option>
+          <option value="2">Projects</option>
+          <option value="3">Community</option>
+          <option value="4">Opensource</option>
+        </select>
+      </div>
+      <div>
+        <label class="question">Do you like our cources?</label>
+        <input type="radio" id="yes" name="radio-buttons" value="yes" />
+        <label for="Yes">Yes</label>
+
+        <input type="radio" id="no" name="radio-buttons" value="no" />
+        <label for="dewey">No</label>
+      </div>
+
+      <fieldset>
+        <legend>Choose your soft ckills:</legend>
+
+        <div>
+          <input type="checkbox" value="friendly" checked />
+          <label for="friendly">Friendly</label>
+        </div>
+
+        <div>
+          <input type="checkbox" value="fast learning" />
+          <label for="fast learning">Fast learning</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Choose your hard skills:</legend>
+        <div>
+          <input type="checkbox" id="js" name="js" value="js" checked />
+          <label for="js">JavaScript</label>
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="html/css"
+            name="html/css"
+            value="html/css"
+          />
+          <label for="html/css">HTML, CSS</label>
+        </div>
+      </fieldset>
+
+      <input
+        type="text"
+        name="inputBox"
+        placeholder=" Write here about your favourite features of HTML & CSS you have learned for now... &#128394;"
+      />
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
